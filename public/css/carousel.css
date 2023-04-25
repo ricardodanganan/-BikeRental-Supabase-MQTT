@@ -1,3 +1,8 @@
+/* Set the height for the carousel items */
+/* .carousel-inner-banner .carousel-item {
+  height: 400px; 
+} */
+
 .carousel-image {
   height: 100%; /* Set the image height to 100% of its container */
   object-fit: cover; /* Scale the image to cover the container while maintaining its aspect ratio */
@@ -5,7 +10,7 @@
 
 .carousel-content {
   position: absolute; /* Set the position to absolute */
-  top: -750%; /* Set the top position */
+  top: -1000%; /* Set the top position */
   left: 50%; /* Set the left position */
   transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
 }
@@ -85,3 +90,4 @@
   width: 16px; /* Set the width of the active indicator */
   height: 16px; /* Set the height of the active indicator */
 }
+

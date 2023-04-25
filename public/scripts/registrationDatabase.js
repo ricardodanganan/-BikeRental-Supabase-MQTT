@@ -36,6 +36,7 @@ async function registerUser() {
 
         // If successful, display a success message
         alert('Registration successful!');
+        closeRegistrationOverlay();
     } catch (error) {
         // Log and display an error message if the registration fails
         console.error('Error during registration:', error.message);
