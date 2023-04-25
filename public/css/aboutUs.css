@@ -41,3 +41,13 @@
     flex-basis: 50%; /* Set the default size of the containers to 50% of the parent container */
     padding: 0 1rem; /* Add 1rem of padding to the left and right of the containers */
 }
+.hi-emoji {
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 175%; 
+    right: 10%; 
+    z-index: 10;
+    width: 180px; 
+  }
+  
