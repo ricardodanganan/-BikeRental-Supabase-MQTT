@@ -1,0 +1,128 @@
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Make the modal stay fixed on the screen */
+    z-index: 1; /* Set the stack order of the modal */
+    left: 0; /* Position the modal at the left edge of the screen */
+    top: 0; /* Position the modal at the top edge of the screen */
+    width: 100%; /* Set the modal width to cover the entire screen width */
+    height: 100%; /* Set the modal height to cover the entire screen height */
+    overflow: auto; /* Add scrollbars if the content overflows */
+    background-color: rgba(0, 0, 0, 0.4); /* Set the background color of the modal */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Set the background color of the modal content */
+    margin: 15% auto; /* Set the margin for the content container */
+    padding: 20px; /* Add padding around the content */
+    border: 1px solid #888; /* Add a border around the content */
+    width: 80%; /* Set the width of the content container */
+}
+
+#view-bikes {
+    background-color: rgba(255, 51, 0, 0.774); /* Set the button background color */
+    color: #fff; /* Set the button text color */
+    font-size: 1rem; /* Set the button font size */
+    font-weight: normal; /* Set the button font weight */
+    font-family: Arial, sans-serif; /* Set the button font family */
+    padding: 1rem 1.5rem; /* Set the button padding */
+    margin-left: 15px; /* Add a margin to the left of the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    border: none; /* Remove the button border */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    text-decoration: none; /* Remove any text decoration from the button */
+    transition: all 0.3s ease; /* Add a transition effect to the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box-shadow to the button */
+    position: relative; /* Set the position property to relative */
+    overflow: hidden; /* Hide any overflowing content */
+    z-index: 1; /* Set the stack order of the button */
+}
+
+#view-bikes:hover {
+    color: #fff; /* Keep the text color the same on hover */
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+#view-bikes:hover::before {
+    content: ''; /* Add an empty content */
+    position: absolute; /* Set the position property to absolute */
+    top: 0; /* Position the content at the top */
+    left: 0; /* Position the content at the left */
+    right: 0; /* Position the content at the right */
+    bottom: 0; /* Position the content at the bottom */
+    background-color: #0056b3; /* Set the background color of the content */
+    z-index: -1; /* Set the stack order of the content */
+    border-radius: 5px; /* Add rounded corners to the content */
+    transition: all 0.3s ease; /* Add a transition effect to the content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add a box-shadow to the content */
+}
+
+#view-bikes:focus {
+    outline: none; /* Remove the focus outline */
+}
+
+.bike-item {
+    display: inline-block; /* Display the bike items inline */
+    width: 300px; /* Set the width of the bike item card */
+    margin: 10px; /* Add margin around the bike item card */
+    padding: 15px; /* Add padding inside the bike item card */
+    background-color: #fff; /* Set the background color of the bike item card */
+    border-radius: 5px; /* Add rounded corners to the bike item card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box-shadow to the bike item card */
+    text-align: center; /* Center align the text inside the bike item card */
+    transition: transform 0.3s ease; /* Add a transition effect to the bike item card */
+}
+
+.bike-item img {
+    width: 100%; /* Set the image width to cover the entire bike item card width */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Make the image cover the entire available space */
+    border-radius: 5px; /* Add rounded corners to the image */
+}
+
+.bike-item h2 {
+    margin: 15px 0; /* Add margin above and below the heading */
+    font-size: 1.2rem; /* Set the font size for the heading */
+}
+
+.bike-item p {
+    margin: 0; /* Remove any default margin */
+    font-size: 0.9rem; /* Set the font size for the paragraph */
+}
+
+.bike-item:hover {
+    transform: translateY(-10px); /* Move the bike item card up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a box-shadow to the bike item card on hover */
+}
+
+.book-button {
+    background-color: #4CAF50; /* Set the button background color */
+    border: none; /* Remove the button border */
+    color: white; /* Set the button text color */
+    text-align: center; /* Center align the button text */
+    text-decoration: none; /* Remove any text decoration from the button */
+    display: inline-block; /* Display the button inline */
+    font-size: 14px; /* Set the button font size */
+    margin: 10px 2px; /* Add margin around the button */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    border-radius: 8px; /* Add rounded corners to the button */
+    padding: 8px 16px; /* Add padding to the button */
+    transition: background-color 0.3s; /* Add a transition effect to the button background color */
+}
+
+.book-button:hover {
+    background-color: #45a049; /* Change the button background color on hover */
+}
+
+.notification {
+    display: none; /* Hide the notification by default */
+    background-color: #4CAF50; /* Set the notification background color */
+    color: white; /* Set the notification text color */
+    text-align: center; /* Center align the notification text */
+    border-radius: 2px; /* Add rounded corners to the notification */
+    padding: 16px; /* Add padding around the notification */
+    position: fixed; /* Fix the position of the notification */
+    z-index: 1; /* Set the stack order of the notification */
+    bottom: 30px; /* Position the notification 30px from the bottom */
+    right: 30px; /* Position the notification 30px from the right */
+    font-size: 17px; /* Set the font size of the notification text */
+}

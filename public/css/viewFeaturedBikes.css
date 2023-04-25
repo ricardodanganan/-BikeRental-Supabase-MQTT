@@ -1,0 +1,85 @@
+/* Container for featured bikes */
+.featured-bikes-container {
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto the next row */
+    margin-bottom: 1.5rem; /* Add bottom margin */
+}
+
+/* Styling for bike card */
+.bike-card {
+    background-color: #fff; /* Set background color */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    margin: 0 10px; /* Add margin to left and right */
+    padding: 1rem; /* Add padding */
+    width: 300px; /* Set width */
+    text-align: center; /* Center align text */
+}
+
+/* Styling for bike card images */
+.bike-card img {
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Set height to auto */
+    object-fit: cover; /* Fit image content within the container */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Styling for bike information container */
+.bike-info {
+    padding: 1rem 0; /* Add padding to top and bottom */
+}
+
+/* Styling for bike info title */
+.bike-info h3 {
+    font-size: 1.25rem; /* Set font size */
+    margin-bottom: 0.5rem; /* Add bottom margin */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+/* Styling for bike info text */
+.bike-info p {
+    font-size: 0.95rem; /* Set font size */
+    margin-bottom: 0.5rem; /* Add bottom margin */
+}
+
+/* Styling for featured bikes title */
+.featured-bikes-title {
+    font-size: 2.5rem; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    text-align: center; /* Center align text */
+    margin-bottom: 1rem; /* Add bottom margin */
+    margin-top: 1rem; /* Add top margin */
+    color: rgba(0, 0, 0, 0.8); /* Set text color */
+}
+
+/* Styling for featured bikes overlay */
+.featured-bikes-overlay {
+    position: fixed; /* Set position to fixed */
+    top: 0; /* Set top position to 0 */
+    left: 0; /* Set left position to 0 */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    background-color: rgba(0, 0, 0, 0.8); /* Set background color with transparency */
+    display: flex; /* Use flex layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    z-index: 1000; /* Set z-index to 1000 */
+}
+
+/* Styling for featured bikes overlay images */
+.featured-bikes-overlay img {
+    max-width: 100%; /* Set maximum width */
+    max-height: 100%; /* Set maximum height */
+}
+
+/* Add hover effect for bike cards */
+.bike-card:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Add hover effect for bike card images */
+.bike-card:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+    transition: transform 0.3s ease-in-out 0s; /* Add transition effect */
+}

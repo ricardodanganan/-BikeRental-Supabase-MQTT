@@ -1,0 +1,73 @@
+/* Start of contact us Overlay */
+
+/* Overlay background */
+.overlay {
+  display: none; /* Initially hidden */
+  position: fixed; /* Fixed position relative to the viewport */
+  z-index: 9999; /* High z-index to appear on top of other elements */
+  left: 0; /* Positioned at the left edge of the viewport */
+  top: 0; /* Positioned at the top edge of the viewport */
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+/* Overlay content (form container) */
+.overlay-content {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Positioned at the vertical center of the overlay */
+  left: 50%; /* Positioned at the horizontal center of the overlay */
+  transform: translate(-50%, -50%); /* Centering the content within the overlay */
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 4px; /* Rounded corners */
+  max-width: 400px; /* Maximum width of the content */
+  width: 90%; /* Width is 90% of the container */
+}
+
+/* Close button */
+.close {
+  color: #aaa; /* Light gray color */
+  float: right; /* Positioned on the right */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Cursor changes to a pointer on hover */
+}
+
+/* Close button hover */
+.close:hover {
+  color: black; /* Text color changes to black on hover */
+}
+
+/* Form label */
+form label {
+  display: block; /* Displayed as a block element */
+  margin-top: 1rem; /* Margin above the label */
+}
+
+/* Form input and textarea */
+form input,
+form textarea {
+  width: 100%; /* Full width of the container */
+  padding: 0.5rem; /* Padding inside the input and textarea */
+  margin-top: 0.5rem; /* Margin above the input and textarea */
+}
+
+/* Form submit button */
+form button {
+  margin-top: 1rem; /* Margin above the button */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  background-color: #007bff; /* Blue background */
+  border: none; /* No border */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Cursor changes to a pointer on hover */
+  transition: background-color 200ms linear; /* Smooth transition of background color */
+}
+
+/* Form submit button hover */
+form button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* End of contact us Overlay */

@@ -1,0 +1,30 @@
+/* Reset margin for the body element */
+body {
+    margin: 0;
+}
+
+/* Start of Gallery CSS */
+
+/* Gallery link container */
+.gallery a {
+    display: block; /* Display as a block element */
+    overflow: hidden; /* Hide any content that overflows the container */
+    position: relative; /* Set position to relative for proper child positioning */
+    height: 450px; /* Fixed height for the container */
+}
+
+/* Gallery image styling */
+.gallery img {
+    width: 100%; /* Full width for the image */
+    height: 100%; /* Full height for the image */
+    object-fit: cover; /* Resize image to cover the container without changing aspect ratio */
+    display: block; /* Display as a block element */
+    transition: transform .3s ease; /* Smooth scale transition */
+}
+
+/* Gallery link hover */
+.gallery a:hover img {
+    transform: scale(1.1); /* Scale the image when hovering over the link */
+}
+
+/* End of Gallery CSS */

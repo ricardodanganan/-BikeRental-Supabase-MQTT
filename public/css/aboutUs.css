@@ -1,0 +1,43 @@
+/* Styling for the banner container */
+.banner-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute the child elements with equal space in between */
+    align-items: center; /* Align the child elements vertically to the center */
+    background-color: #ffffff; /* Set the background color of the container to white */
+    padding-top: 25px; /* Add 25 pixels of padding to the top of the container */
+}
+/* Styling for the banner text */
+.banner-text {
+    font-size: 3rem; /* Set the font size to 3rem (relative to the root font size) */
+    font-weight: bold; /* Set the font weight to bold */
+    padding-left: 1rem; /* Add 1rem of padding to the left of the text */
+}
+
+/* Styling for the banner paragraph */
+.banner-paragraph {
+    font-size: 1rem; /* Set the font size to 1rem (relative to the root font size) */
+    margin-top: 0.5rem; /* Add 0.5rem of margin to the top of the paragraph */
+    padding-left: 1rem; /* Add 1rem of padding to the left of the paragraph */
+}
+
+/* Styling for the banner buttons container */
+.banner-buttons {
+    margin-top: 1rem; /* Add 1rem of margin to the top of the container */
+}
+
+/* Styling for the individual buttons inside the banner buttons container */
+.banner-buttons .btn {
+    margin-right: 1rem; /* Add 1rem of margin to the right of each button */
+}
+
+/* Styling for the banner image */
+.banner-image {
+    width: 100%; /* Set the image width to 100% of the container */
+    height: auto; /* Set the height to auto for maintaining the aspect ratio */
+}
+
+/* Styling for the image and text banner containers */
+.image-banner, .text-banner {
+    flex-basis: 50%; /* Set the default size of the containers to 50% of the parent container */
+    padding: 0 1rem; /* Add 1rem of padding to the left and right of the containers */
+}

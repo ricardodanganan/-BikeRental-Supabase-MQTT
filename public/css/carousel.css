@@ -1,0 +1,87 @@
+.carousel-image {
+  height: 100%; /* Set the image height to 100% of its container */
+  object-fit: cover; /* Scale the image to cover the container while maintaining its aspect ratio */
+}
+
+.carousel-content {
+  position: absolute; /* Set the position to absolute */
+  top: -750%; /* Set the top position */
+  left: 50%; /* Set the left position */
+  transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
+}
+
+.carousel-text {
+  font-weight: bold; /* Set the font weight to bold */
+  font-size: 4rem; /* Set the font size to 4rem */
+  text-align: center; /* Center the text */
+}
+
+.learn-more-btn {
+  display: inline-block; /* Set the display to inline-block */
+  background-color: rgba(255, 51, 0, 0.774); /* Set the background color with transparency */
+  color: white; /* Set the text color to white */
+  font-weight: bold; /* Set the font weight to bold */
+  font-size: 1rem; /* Set the font size to 1rem */
+  padding: 12px 25px; /* Add padding to the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove the text decoration */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.learn-more-btn:hover {
+  background-color: rgba(255, 51, 0, 0.774); /* Maintain the background color when hovered */
+  color: #000000; /* Set the text color to black when hovered */
+  text-decoration: none; /* Maintain the text decoration when hovered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a stronger box shadow when hovered */
+  transform: translateY(-2px); /* Move the button up by 2 pixels when hovered */
+}
+
+.carousel-description {
+  font-size: 1.5rem; /* Set the font size to 1.5rem */
+  text-align: center; /* Center the text */
+}
+
+.container-fullwidth {
+  max-width: 100%; /* Set the maximum width to 100% */
+  padding-right: 0; /* Remove the right padding */
+  padding-left: 0; /* Remove the left padding */
+}
+
+.carousel-scale .carousel-inner .carousel-item {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Add smooth transitions for transform and opacity */
+  opacity: 0; /* Set the initial opacity to 0 */
+  transform: scale(0.8); /* Set the initial scale to 0.8 */
+  z-index: 1; /* Set the z-index to 1 */
+}
+
+.carousel-scale .carousel-inner .carousel-item.active {
+  opacity: 1; /* Set the opacity to 1 for the active carousel item */
+  transform: scale(1); /* Set the scale to 1 for the active carousel item */
+  z-index: 2; /* Set the z-index to 2 for the active carousel item */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3; /* Set the z-index to 3 for the carousel controls */
+}
+
+.carousel-indicators {
+  bottom: -30px; /* Set the position of the carousel indicators */
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5); /* Set the background color of the indicators with transparency */
+  border-radius: 50%; /* Make the indicators circular */
+  width: 12px; /* Set the width of the indicators */
+  height: 12px; /* Set the height of the indicators */
+  margin-right: 10px; /* Add right margin */
+  margin-left: 10px; /* Add left margin */
+}
+
+.carousel-indicators .active {
+  background-color: rgba(255, 255, 255, 1); /* Set the background color of the active indicator */
+  width: 16px; /* Set the width of the active indicator */
+  height: 16px; /* Set the height of the active indicator */
+}

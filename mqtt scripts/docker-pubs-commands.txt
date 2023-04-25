@@ -1,0 +1,58 @@
+// General Mosquitto docker commands
+apt install mosquitto - the broker 
+apt install mosquitto clients - the 2 clients
+service mosquitto start - to start mosquitto
+docker cd <filename> <dockerID>:. - to copy a file to another docker
+
+// install curl to use the curl message
+apt install curl
+
+// mosquitto pub message to add a new marker in the maps and database from the bike-rental-supabase script
+mosquitto_pub -h 172.18.0.2 -t my-event-log/id/latitude/longtitude/shop_name/location_name/bike_availables/opening/rating/image_url/reviews/email/contact_number/ -m 1,53.32516015352174,-6.254500679725526,Ranelagh_bikes,Ranelagh,10,19:03:35.908788,4,https://www.pasadenastarnews.com/wp-content/uploads/migration/2016/201612/NEWS_161219676_AR_0_WXSZMVROQHNY.jpg?w=535,,ranelagh_bikes@gmail.com,+35374567890
+
+// Reduce the bikes available using the bike-availables-reduce script
+mosquitto_pub -h 172.18.0.2 -t bike_availability/<id#> -m <# of reduced availability>
+
+// Increase the bikes available the bike-availables-increase script
+mosquitto_pub -h 172.18.0.2 -t bike_availability_increase/<id#> -m <#> of increased availability>
+
+// Install jq on the monsquitto subscriber docker
+apt install jq
+
+// Install python3 on the mosquitto subscriber docker
+apt install python3
+
+// copy parse_json_bikes.py file into the mosquitto subscriber docker
+docker cp parse_json_bikes.py <dockerID>:.
+
+
+// Performance Testing / script
+import { check } from "k6";
+import http from "k6/http";
+
+export default function() {
+	let res = http.get("your website domain");
+	check( res, {
+		"is status 200": (r) => r.status === 200
+	});
+};
+
+
+// 1. Install Docker and run the following commands
+// docker pull loadimpact/k6
+// docker run -i loadimpact/k6 run - <KNscript.js
+// or
+// docker run -i loadimpact/k6 run -u 10 -d 30s - <KNscript.js
+
+
+// Steps on how to stop/kill running ports on different machines in google cloud
+// On Debian, Ubuntu, and other Debian-based distributions, you can install lsof using the following command: --
+command: sudo apt-get install lsof
+
+// You can use the lsof command to find the process ID (PID) that is listening on the port 3000 and then use the kill command to terminate that process.
+// Here's the command to find the PID of the process listening on port 3000:
+Command: lsof -t -i :3000
+
+// This will output the PID of the process listening on port 3000
+// Once you have the PID, you can use the kill command to terminate the process.
+command: kill <PID>

@@ -1,0 +1,167 @@
+/* Start of Maps CSS */
+
+/* Card container styling */
+.card {
+  width: 250px; /* Fixed width */
+  background-color: #fff; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2); /* Box shadow */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 15px; /* Font size */
+  color: #333; /* Font color */
+  font-weight: bold; /* Font weight */
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 15px; /* Font size */
+  color: #666; /* Font color */
+}
+
+/* Card body styling */
+.card-body {
+  padding: 10px; /* Padding */
+  margin: 10px; /* Margin */
+}
+
+/* Map container styling */
+#map-container {
+  position: relative; /* Set position to relative for child positioning */
+  height: 650px; /* Fixed height */
+}
+
+/* Section map title styling */
+#section-map {
+  font-size: 2.5rem; /* Font size */
+  margin-bottom: 5px; /* Margin bottom */
+  font-weight: bold; /* Font weight */
+  color: #333; /* Font color */
+  text-align: center; /* Centered text */
+  position: relative; /* Set position to relative for child positioning */
+}
+
+/* Section map hover effect */
+#section-map:hover {
+  color: rgba(255, 51, 0, 0.774); /* Change font color */
+  transform: scale(1.1); /* Scale up */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Section map line under the text */
+#section-map::after {
+  content: ''; /* Insert content */
+  display: block; /* Display as a block element */
+  width: 50%; /* Half the width of the text */
+  height: 2px; /* Line height */
+  background-color: #333; /* Line color */
+  position: absolute; /* Absolute positioning */
+  bottom: -10px; /* Positioning under the text */
+  left: 50%; /* Centering the line */
+  transform: translateX(-50%); /* Centering the line horizontally */
+}
+
+/* Map element styling */
+#map {
+  height: 100%; /* Full height */
+  width: auto; /* Automatic width */
+}
+
+/* Search bar styling */
+#search-bar {
+  position: absolute; /* Absolute positioning */
+  top: 5%; /* Positioning from the top */
+  left: 50%; /* Centering horizontally */
+  transform: translate(-50%, -50%); /* Centering horizontally */
+  z-index: 1; /* Layering order */
+  width: 350px; /* Fixed width */
+}
+
+/* Search input styling */
+#search-input {
+  border-radius: 25px; /* Rounded corners */
+  padding-left: 50px; /* Padding on the left */
+  padding-right: 50px; /* Padding on the right */
+}
+
+/* Search button styling */
+#search-btn {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Centering vertically */
+  right: 0; /* Positioning from the right */
+  transform: translateY(-50%); /* Centering vertically */
+  border-radius: 25px; /* Rounded corners */
+}
+
+/* Start of Sidebar CSS */
+
+/* Sidebar container styling */
+#sidebar {
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Positioning from the top */
+  right: 0; /* Positioning from the right */
+  width: 25%; /* 25% of the width */
+  max-width: 300px; /* Maximum width */
+  height: 100%; /* Full height */
+  background-color: white; /* Background color */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Box shadow */
+  padding: 20px; /* Padding */
+  overflow-y: auto; /* Scrollable content */
+  z-index: 1000; /* Layering order */
+  display: none; /* Hide the sidebar */
+}
+
+/* Sidebar content image styling */
+.sidebar-content img {
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Automatic height */
+}
+
+/* Card margin styling */
+.card {
+  margin-bottom: 15px; /* Margin bottom */
+}
+
+/* Last card margin styling */
+.card:last-child {
+  margin-bottom: 0; /* No margin bottom */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.2rem; /* Font size */
+  margin-bottom: 0.5rem; /* Margin bottom */
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 0.9rem; /* Font size */
+  margin-bottom: 0.5rem; /* Margin bottom */
+}
+
+/* Card text image styling */
+.card-text img {
+  vertical-align: middle; /* Align with text */
+  margin-right: 5px; /* Margin right */
+}
+
+/* Reviews container styling */
+#sidebar .reviews {
+  max-height: 300px; /* Maximum height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 0 10px; /* Padding from the left and right */
+}
+
+/* Review styling */
+.review {
+  font-size: 0.9rem; /* Font size */
+}
+
+/* Reviews margin styling */
+.reviews {
+  margin-top: 20px; /* Margin top */
+}
+
+/* End of Maps CSS */

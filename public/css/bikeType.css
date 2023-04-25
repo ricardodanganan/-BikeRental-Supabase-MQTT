@@ -1,0 +1,57 @@
+.bike-image {
+    width: 100%; /* Set the width to 100% of its container */
+    height: 300px; /* Set the height to 300px */
+    object-fit: cover; /* Scale the image to cover the container while maintaining its aspect ratio */
+}
+
+.biketype-card {
+    width: 100%; /* Set the width to 100% of its container */
+    border: 1px solid #ccc; /* Add a 1px solid border with a light gray color */
+    border-radius: 5px; /* Add a 5px border radius to round the card's corners */
+    margin-bottom: 20px; /* Add a 20px margin to the bottom of the card */
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow to create a subtle 3D effect */
+}
+
+.biketype-card-body {
+    padding: 20px; /* Add a 20px padding around the card body */
+    text-align: center; /* Center the text inside the card body */
+}
+
+.main-heading {
+    font-size: 2rem; /* Set the font size to 2rem */
+    font-weight: bold; /* Set the font weight to bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 5px; /* Add a 5px margin to the bottom of the heading */
+}
+
+.custom-card {
+    width: 100%; /* Set the width to 100% of its container */
+}
+
+.text-center {
+    text-align: center; /* Center the text */
+}
+
+.main-heading {
+    font-weight: bold; /* Set the font weight to bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 5px; /* Add a 5px margin to the bottom of the heading */
+    color: rgba(0, 0, 0, 0.780); /* Set the text color to a slightly transparent black */
+}
+
+.biketype-card:hover {
+    transform: scale(1.05); /* Scale the card up by 5% when hovered */
+    transition: transform 0.3s; /* Animate the transformation with a 0.3s duration */
+    z-index: 1; /* Set the z-index to 1 to ensure the card appears on top of other elements when hovered */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a stronger box shadow when hovered */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animate the transformation and box-shadow with a 0.3s duration */
+}
+
+.card-title {
+    color: #333; /* Set the text color to a dark gray */
+    font-weight: 600; /* Set the font weight to slightly bold */
+}
+
+.card-text {
+    margin-top: 15px; /* Add a 15px margin to the top of the card text */
+}

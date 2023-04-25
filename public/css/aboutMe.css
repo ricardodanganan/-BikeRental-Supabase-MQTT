@@ -1,0 +1,109 @@
+/* Styles for the About Me overlay container */
+.About-Me-Overlay {
+    position: fixed; /* Overlay will be fixed on the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: none; /* Overlay is initially hidden */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    z-index: 2000; /* Overlay will be above other elements */
+}
+
+/* Styles for the About Me overlay content container */
+.About-Me-Overlay-content {
+    position: relative;
+    margin: 5% auto; /* Center the content container */
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Styles for the About Me overlay close button */
+.About-Me-Overlay-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Change close button color on hover */
+.About-Me-Overlay-close-btn:hover {
+    color: #999;
+}
+
+/* Styles for the social links container */
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* Styles for individual social links */
+.social-link {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Common hover effect for all social links */
+.social-link:hover {
+    color: #999;
+    transform: scale(1.1); /* Scale the link icon */
+    transition: color 0.3s, transform 0.3s; /* Transition effect */
+}
+
+/* Styles for the About Me section */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles for the left side of the About Me section */
+.about-me-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/* Styles for the right side of the About Me section */
+.about-me-right {
+    flex: 2;
+}
+
+/* Social link hover effects based on platform */
+.social-link:hover[href*="linkedin"] {
+    color: #0077b5;
+}
+
+.social-link:hover[href*="github"] {
+    color: #333;
+}
+
+.social-link:hover[href*="envelope"] {
+    color: #d30c05;
+}
+
+/* Styles for the About Me section headings */
+.about-me h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styles for the About Me section paragraphs */
+.about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,111 @@
+/* Start of bike container CSS */
+.bike-container {
+  margin-bottom: 0.5rem; /* Add a 0.5rem margin at the bottom of the container */
+  text-align: center; /* Center the text inside the container */
+  padding-top: 50px; /* Add 50px padding at the top of the container */
+  padding-left: 35px; /* Add 35px padding on the left of the container */
+}
+
+/* Start of title CSS */
+#section-bike {
+  font-size: 2.5rem; /* Set the font size to 2.5rem */
+  margin-bottom: 5px; /* Add 5px margin at the bottom of the title */
+  font-weight: bold; /* Set the font weight to bold */
+  color: #333; /* Set the font color to a dark gray */
+  text-align: center; /* Center the title text */
+  position: relative; /* Set the position property to relative */
+}
+
+#section-bike:hover {
+  color: rgba(255, 51, 0, 0.774); /* Change the color on hover */
+  transform: scale(1.1); /* Increase the size on hover */
+  transition: all 0.3s ease; /* Animate the transformation */
+}
+
+#section-bike::after {
+  content: ''; /* Add content */
+  display: block; /* Set display to block */
+  width: 50%; /* Set the width to 50% of the parent element */
+  height: 2px; /* Set the height to 2px */
+  background-color: #333; /* Set the background color to dark gray */
+  position: absolute; /* Set the position property to absolute */
+  bottom: -10px; /* Position the element 10px above the bottom edge of the parent element */
+  left: 50%; /* Position the element in the center horizontally */
+  transform: translateX(-50%); /* Center the element horizontally */
+}
+
+/* End of title CSS */
+
+/* Start of bike CSS */
+.bike {
+  background-color: #f8f9fa; /* Set the background color to a light gray */
+  border: 1px solid #dee2e6; /* Add a 1px border with a light gray color */
+  padding: 10px; /* Add 10px padding around the content */
+}
+
+.bike h3 {
+  margin-top: 0; /* Remove the top margin */
+}
+
+.bike p {
+  margin-bottom: 0; /* Remove the bottom margin */
+}
+
+#bikes-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap if necessary */
+  justify-content: space-between; /* Distribute items evenly with equal space between */
+  margin-bottom: 50px; /* Add 50px margin at the bottom of the container */
+}
+
+h1 {
+  font-size: 2rem; /* Set the font size to 2rem */
+  margin-bottom: 0.5rem; /* Add 0.5rem margin at the bottom */
+}
+
+/* End of bike CSS */
+
+/* Start of View Bike button CSS */
+.text-center {
+  text-align: center; /* Center the text */
+}
+
+.mt-3 {
+  margin-top: 1rem; /* Add 1rem margin at the top */
+}
+
+.view-bike-btn {
+  background-color: #333; /* Set the background color to dark gray */
+  border: none; /* Remove the border */
+  color: white; /* Set the font color to white */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove any text decoration */
+  display: inline-block; /* Set the display to inline-block */
+  font-size: 16px; /* Set the font size to 16px */
+  padding: 10px 24px; /* Add 10px padding vertically and 24px padding horizontally */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  border-radius: 4px; /* Add a 4px border radius to round the button's corners */
+}
+
+/* End of View Bike button CSS */
+
+/* Link button */
+.link-button {
+  text-decoration: none; /* Remove any text decoration */
+  color: #007bff; /* Set the font color to a blue color */
+  background-color: white; /* Set the background color to white */
+  display: inline-block; /* Set the display to inline-block */
+  padding: 5px 15px; /* Add 5px padding vertically and 15px padding horizontally */
+  border-radius: 4px; /* Add a 4px border radius to round the button's corners */
+  font-size: 1.5em; /* Set the font size to 1.5em */
+  transition: all 0.3s ease; /* Animate all changes with a 0.3s duration and ease timing function */
+}
+
+.link-button:hover {
+  color: #0056b3; /* Change the font color to a darker blue when hovered */
+  background-color: white; /* Keep the background color white when hovered */
+  text-decoration: none; /* Remove any text decoration when hovered */
+  transform: scale(1.0); /* Maintain the same scale when hovered */
+}
+
+/* End of Link button CSS */

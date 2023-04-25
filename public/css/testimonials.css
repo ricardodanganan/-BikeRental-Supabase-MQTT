@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Set the default font for the entire page */
+}
+
+.container {
+    max-width: 800px; /* Set the maximum width for the container */
+}
+
+.testimonial {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; /* Add space below each testimonial */
+}
+
+.testimonial::before {
+    /* Add a diagonal background shape to the testimonial */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 119, 255, 0.1);
+    transform: rotate(-45deg) translateY(-50%);
+    left: -50%;
+    top: 50%;
+    z-index: -1;
+}
+
+.testimonial-text {
+    /* Style the testimonial text */
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    /* Style the testimonial author name */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-author-title {
+    /* Style the testimonial author title */
+    font-size: 14px;
+    color: #777;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* Style the carousel control buttons */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.testimonial-text-container {
+    /* Style the testimonial text container */
+    position: relative;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+
+.testimonial-text-container::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+.testimonial-text-container::-webkit-scrollbar-thumb {
+    /* Style the scrollbar thumb */
+    background-color: rgba(0, 119, 255, 0.5);
+    border-radius: 3px;
+}

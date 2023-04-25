@@ -1,0 +1,15 @@
+.sponsors-carousel-container {
+  padding-top: 0rem; /* Set the top padding of the carousel container */
+  max-width: 90%; /* Set the maximum width for the carousel container */
+  margin: 0 auto; /* Center the carousel container horizontally */
+}
+
+.sponsors-carousel-container img {
+  width: 70%; /* Set the width of sponsor images */
+  display: block; /* Display the images as block elements */
+  margin: 0 auto; /* Center the images horizontally within the container */
+}
+
+.sponsors-carousel-container div {
+  padding: 10px; /* Add padding to each sponsor's div */
+}

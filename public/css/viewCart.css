@@ -1,0 +1,139 @@
+/* Modal styling for the cart */
+.cart-modal {
+    display: none; /* Hide the cart modal by default */
+    position: fixed; /* Fix the position of the cart modal */
+    z-index: 1; /* Set the stack order of the cart modal */
+    left: 0;
+    top: 0;
+    width: 100%; /* Set the width of the cart modal to cover the full viewport */
+    height: 100%; /* Set the height of the cart modal to cover the full viewport */
+    overflow: auto; /* Enable scrolling if the content overflows */
+    background-color: rgba(0, 0, 0, 0.4); /* Set the background color with transparency */
+}
+
+/* Styling for the content inside the cart modal */
+.cart-modal-content {
+    position: relative;
+    background-color: #fefefe; /* Set the background color */
+    margin: 15% auto; /* Center the content vertically and horizontally */
+    padding: 20px; /* Add padding around the content */
+    border: 1px solid #888; /* Add a border */
+    width: 80%; /* Set the width */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a box shadow */
+    animation-name: cartmodalopen; /* Apply animation */
+    animation-duration: 0.4s; /* Set the animation duration */
+}
+
+/* Styling for the cart item */
+.cart-item {
+    background-color: #fff; /* Set the background color */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    display: flex; /* Use flexbox to position the content */
+    flex-direction: column; /* Set the flex direction to column */
+    align-items: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add a margin to the bottom */
+    overflow: hidden; /* Hide the content that overflows the container */
+    text-align: center; /* Center align the text */
+    transition: all 0.3s ease; /* Add a transition effect */
+}
+
+/* Hover effect for the cart item */
+.cart-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a hover box shadow */
+    transform: translateY(-5px); /* Move the cart item up */
+}
+
+/* Styling for the cart item image */
+.cart-item img {
+    width: 100%; /* Set the width */
+    object-fit: cover; /* Scale the image to fit the container */
+}
+
+/* Styling for the cart item info */
+.cart-item-info {
+    flex: 1; /* Make the item info flexible */
+    padding: 20px; /* Add padding around the content */
+    text-align: center; /* Center align the text */
+    padding: 10px; /* Add padding */
+}
+
+/* Styling for the cart item info headings and paragraphs */
+.cart-item-info h2,
+.cart-item-info p {
+    margin: 0; /* Remove the margin */
+    padding: 5px; /* Add padding */
+}
+
+/* Styling for the cart modal content */
+.cart-modal-content {
+    text-align: center; /* Center align the text */
+}
+
+/* Styling for the cart list */
+#cart-list {
+    display: flex; /* Use flexbox to position the content */
+    flex-wrap: wrap; /* Allow items to wrap onto the next row */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add space between items */
+}
+
+/* Styling for the cart item */
+.cart-item {
+    width: 300px; /* Set the width of the cart item */
+}
+
+/* Styling for the view cart button */
+#view-cart {
+    background-color: transparent; /* Set the background to transparent */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 25px; /* Set font size */
+    transition: color 0.3s, transform 0.3s; /* Add transition for color and transform */
+}
+
+/* Hover effect for view cart button */
+#view-cart:hover {
+    color: rgba(255, 51, 0, 0.774); /* Change color on hover */
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+/* Styling for the remove button */
+.pretty-remove-button {
+    background-color: #f44336; /* Set background color */
+    border: none; /* Remove border */
+    color: white; /* Set text color */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Display as inline-block */
+    font-size: 14px; /* Set font size */
+    margin: 10px 0; /* Add margin */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px; /* Add rounded corners */
+    padding: 10px 20px; /* Add padding */
+    transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+/* Hover effect for the remove button */
+.pretty-remove-button:hover {
+    background-color: #d32f2f; /* Change background color on hover */
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fade-in {
+    to {
+        opacity: 1; /* Set final opacity to 1 */
+    }
+}
+
+/* Keyframes for the cart modal open animation */
+@keyframes cartmodalopen {
+    from {
+        opacity: 0; /* Set initial opacity to 0 */
+    }
+
+    to {
+        opacity: 1; /* Set final opacity to 1 */
+    }
+}
+
