@@ -58,6 +58,7 @@
   <link rel="stylesheet" href="css/bikeType.css">
   <link rel="stylesheet" href="css/aboutMe.css">
   <link rel="stylesheet" href="css/viewCart.css">
+  <link rel="stylesheet" href="css/backToTopAndSounds.css">
   <link rel="stylesheet" href="css/EmbedVideo.css">
 
   <!-- Link to Slick Carousel CSS for additional carousel options -->
@@ -92,9 +93,9 @@
       <div class="flexItem-2 text-center">
         <!-- Logo text with a link to the home section -->
         <div><strong class="text-white" id="section-home">
-          <a href="#section-bike"><img
-              src="https://cdn.dribbble.com/users/846207/screenshots/3605450/media/c917b07fd1af19d8cb675337f5c47adf.gif"
-              alt="Dublin Bikes logo" style="max-height: 75px;"></a></strong></div>
+            <a href="#section-bike"><img
+                src="https://cdn.dribbble.com/users/846207/screenshots/3605450/media/c917b07fd1af19d8cb675337f5c47adf.gif"
+                alt="Dublin Bikes logo" style="max-height: 75px;"></a></strong></div>
       </div>
 
       <!-- Empty flex item to create space on the right side of the navbar -->
@@ -659,10 +660,9 @@
         <div class="carousel-item active">
           <div class="testimonial">
             <div class="testimonial-text-container">
-              <p class="testimonial-text">"I rented a bike from Amigo Bike Rentals and had a fantastic experience. The
-                staff was friendly and helpful, the rental process was easy, and the bike was in excellent condition. I
-                had a great ride and would definitely recommend Amigo Bike Rentals to anyone looking for a quality
-                rental service."</p>
+              <p class="testimonial-text">"I rented a bike from Amigo Bike Rentals and had a fantastic experience.The
+                staff was friendly and helpful, the rental process was easy, and the bike was in excellent condition.I
+                had a great ride and would definitely recommend to anyone Amigo bike rentals"</p>
             </div>
             <h5 class="testimonial-author">- Jane Doyle</h5>
           </div>
@@ -672,10 +672,10 @@
         <div class="carousel-item">
           <div class="testimonial">
             <div class="testimonial-text-container">
-              <p class="testimonial-text">"I had an excellent experience renting a bike from Amigo Bike Rentals. The
-                staff was
-                friendly and knowledgeable, and helped me choose the perfect bike for my needs. The rental process was
-                quick and easy, and the bike was in great condition."</p>
+              <p class="testimonial-text">"I utilized Amigo Bike Rentals for a bike rental and was thoroughly
+                impressed. The personnel were kind and informative, the rental process was straightforward, and the bike
+                was in top-notch shape. I had an amazing ride and would highly recommend this to all."
+              </p>
             </div>
             <h5 class="testimonial-author">- Alice Maddison</h5>
           </div>
@@ -685,10 +685,9 @@
         <div class="carousel-item">
           <div class="testimonial">
             <div class="testimonial-text-container">
-              <p class="testimonial-text">"I rented a bike from Amigo Bike Rentals and it was a great experience. The
-                staff was friendly and helpful, and the rental process was easy. The bike was in excellent condition and
-                made for a fun ride. I would definitely recommend Amigo Bike Rentals to anyone looking for a quality
-                rental service"</p>
+              <p class="testimonial-text">"I hired a bike from Amigo Bike Rentals and enjoyed a fabulous experience. The
+                staff was attentive, the rental procedure was simple, and the bike was in prime condition. I
+                had a fantastic ride and would absolutely recommend Amigo Bike Rentals to anyone."</p>
             </div>
             <h5 class="testimonial-author">- Michael Brown</h5>
           </div>
@@ -770,6 +769,12 @@
   <!-- back to top button -->
   <img src="img/ArrowUp.gif" alt="Back to top" id="backToTop" title="Go to top" style="max-width: 65px;">
 
+  <!-- Play and pause button -->
+  <button id="playPauseSound">
+    <img id="musicIcon" src="img/spotify.gif" alt="Music Icon" />
+  </button>
+  <audio id="customSound" src="img/lofi-chill-140858.mp3" preload="auto"></audio>
+
 
   <!-- Link to Bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -810,6 +815,8 @@
   <script src="scripts/bikeTypeContainer.js"></script>
   <script src="scripts/aboutMe.js"></script>
   <script src="scripts/viewCart.js"></script>
+  <script src="scripts/soundScript.js"></script>
+  <script src="scripts/sounds.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
 
   <!-- AOS script for the image gallery-->

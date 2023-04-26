@@ -1,0 +1,47 @@
+/* Start of Back to Top Button CSS */
+
+/* Back to top button container */
+#backToTop {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed positioning */
+    bottom: 20px; /* 20px from the bottom of the viewport */
+    right: 30px; /* 30px from the right of the viewport */
+    z-index: 99; /* Stacking order */
+    font-family: 'Permanent Marker', cursive; /* Font family */
+    font-size: 13px; /* Font size */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: transparent; /* Transparent background */
+    color: rgba(255, 51, 0, 0.774); /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Padding around the button */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  /* Back to top button hover */
+  #backToTop:hover {
+    color: rgb(255, 166, 0); /* Text color on hover */
+  }
+  
+  /* End of Back to Top Button CSS */
+
+/* Play sound button container */
+/* Play and pause sound button container */
+#playPauseSound {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Music icon styles */
+#musicIcon {
+  width: 42px; /* Adjust icon size */
+  height: 42px; /* Adjust icon size */
+}
+
