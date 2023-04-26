@@ -16,6 +16,12 @@ mosquitto_pub -h 172.18.0.2 -t bike_availability/<id#> -m <# of reduced availabi
 // Increase the bikes available the bike-availables-increase script
 mosquitto_pub -h 172.18.0.2 -t bike_availability_increase/<id#> -m <#> of increased availability>
 
+// Change the rating of each bikeshops
+mosquitto_pub -h 172.18.0.2 -t bike-rating-change/<id#> -m <#> of ratings between (1-5)>
+
+// Change the contact number of bikeshops
+mosquitto_pub -h 172.18.0.2 -t bike-contact-change/<id#> -m "<the new number>" 
+
 // Install jq on the monsquitto subscriber docker
 apt install jq
 
