@@ -1,4 +1,10 @@
-#!/bin/bash
+# !/bin/bash
+# Made by: Ricardo Danganan Jnr
+# Made in: 23/04/2023
+
+# Description: This script subscribes to the MQTT topic "bike-contact-change/#" and updates the contact number of the bike shop in the Supabase database when a new contact number is received.
+# The script expects the MQTT message to be in the format "bike-contact-change/<id> <new_contact_number>".
+# The script will extract the bike shop ID and the new contact number from the MQTT message and update the contact number of the bike shop in the Supabase database.
 
 SUPABASE_URL="https://muctatxynqfjximhcyty.supabase.co"
 SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Y3RhdHh5bnFmanhpbWhjeXR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzY4ODU3NDQsImV4cCI6MTk5MjQ2MTc0NH0.CzbdMc-mUqOR_pu2O-sf_d9oD8Ls6YuuIbKWPhvfYfg"

@@ -1,4 +1,10 @@
-#!/bin/bash
+# !/bin/bash
+# Made by: Ricardo Danganan Jnr
+# Made in: 23/04/2023
+
+# Description: This script subscribes to the MQTT topic "bike-rating-change/#" and updates the rating of the bike shop in the Supabase database when a new rating is received.
+# The script expects the MQTT message to be in the format "bike-rating-change/<id> <new_rating>".
+# The script will extract the bike shop ID and the new rating from the MQTT message and update the rating of the bike shop in the Supabase database.
 
 # Set up Supabase URL, key, and API endpoint
 SUPABASE_URL="https://muctatxynqfjximhcyty.supabase.co"
