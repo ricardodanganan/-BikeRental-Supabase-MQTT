@@ -1,35 +1,37 @@
 .embed-responsive-16by9::before {
-    padding-top: 56.25%;
-  }
+  padding-top: 56.25%;
+}
 
-  .embed-responsive {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-  }
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
 
-  .embed-responsive::before {
-    content: "";
-    display: block;
-    padding-top: 60%;
-  }
+.embed-responsive::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
 
-  .embed-responsive .embed-responsive-item,
-  .embed-responsive iframe,
-  .embed-responsive embed,
-  .embed-responsive object,
-  .embed-responsive video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    border: 0;
-  }
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
 
-  .custom-heading {
-    margin-bottom: 1rem; /* Adjust the margin as needed */
-  }
+.custom-heading {
+  margin-bottom: 1rem;
+  /* Adjust the margin as needed */
+}
+
